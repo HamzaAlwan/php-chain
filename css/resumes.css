@@ -43,4 +43,5 @@ ul li span {
 ul .download { 
     color: forestgreen;
     cursor: pointer;
+    list-style: none;
 }

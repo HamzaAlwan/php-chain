@@ -54,7 +54,7 @@
                     '<li class="col-md-6">' . '<span>' . "JavaScript Level: " . '</span>' . $row["javaScript"] . '</li>' .
                     '<li class="col-md-6">' . '<span>' . "OOP Level: " . '</span>' . $row["oop"] . '</li>' .
                     '<li class="col-md-6">' . '<span>' . "Github account link: " . '</span>' . $row["github"] . '</li>' .
-                    '<li class="col-md-6" ' . 'onclick=' . 'getResume(' . '"' . $row["email"] . '"' . ')' . '>' . '<span>' . "Download resume: " . '</span>' . '<span class="download">' . $row["resume"] . '</span></li>' .
+                    '<li class="col-md-6" ' . 'onclick=' . 'getResume(' . '"' . $row["email"] . '"' . ')' . '>' . '<span>' . "View resume: " . '</span>' . '<a class="download" target="_blank" href="view.php?fullname=' . $row["fullname"] . '" >' . $row["resume"] . '</a></li>' .
                     '<li id="experiance" class="col-md-12">' . '<span>' . "A brief intro about work experience: " . '</span>' . $row["about"] . '</li></ul>';
                     }
                 } else {
